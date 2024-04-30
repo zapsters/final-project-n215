@@ -163,6 +163,9 @@ nav .links .active {
   font-style: normal;
   color: white;
 }
+.home .hero .content a:hover {
+  box-shadow: rgb(0, 0, 0) 0px 0 7px;
+}
 .home .quoteBox {
   max-width: 789px;
   margin: 0 auto;
