@@ -10,3 +10,20 @@
   font-style: normal;
   color: white;
 }
+
+@mixin wrapper {
+  width: 90%;
+  max-width: $wrapperWidth;
+  margin: 0 auto;
+}
+
+@mixin horizontalRule {
+  margin: 15.8px 0 36px 0;
+  border-color: black;
+  max-width: 229px;
+  border-style: solid;
+}
+
+@mixin backgroundImage($imageSrc) {
+  background-image: url($imageSrc);
+}

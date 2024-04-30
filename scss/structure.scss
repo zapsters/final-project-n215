@@ -18,3 +18,11 @@ p {
   margin-bottom: 16px;
 }
 /* End of Reset */
+
+.wrapper {
+  @include wrapper;
+}
+
+hr {
+  @include horizontalRule;
+}

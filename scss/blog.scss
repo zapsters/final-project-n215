@@ -1,0 +1,276 @@
+.blog {
+  margin-top: 85.5px;
+  margin-bottom: 60px;
+
+  h1 {
+    font-family: "Gill Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10.5px;
+  }
+
+  .blogSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    align-items: center;
+    flex-wrap: wrap;
+    @include wrapper;
+    gap: 59px;
+    row-gap: 30px;
+
+    .blogEntry {
+      flex: 46%;
+      display: flex;
+      align-items: flex-start;
+
+      flex-grow: 0;
+      gap: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      margin-right: auto !important;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .date {
+        max-width: 60px;
+        aspect-ratio: 60/60;
+        flex: 1;
+        background-color: $csPink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+
+        h1 {
+          color: white;
+          font-family: "Gill Sans";
+          font-weight: bold;
+          font-size: 22px;
+          margin: 0;
+        }
+        h2 {
+          color: white;
+          font-family: "Gill Sans";
+          font-weight: 100;
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+    .blogContent {
+      flex: 1;
+
+      .blogHero {
+        aspect-ratio: 380 / 140;
+        background-image: url("../images/blog.jpg");
+        margin-bottom: 20px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      p {
+        font-family: "Gill Sans";
+        font-weight: bold;
+        font-size: 15px;
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 11px;
+      }
+      p:nth-child(3) {
+        font-family: "Gill Sans";
+        font-weight: 100;
+        color: $csPink;
+        font-size: 13px;
+        margin: 0;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .blogEntry {
+    @include wrapper;
+    .hero {
+      width: 100%;
+      height: 300px;
+      aspect-ratio: 981 / 300;
+      position: relative;
+      background-image: url("../images/blog.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+
+      .overlay {
+        background-color: $csPink;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 60%;
+      }
+      .cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        opacity: 1;
+        z-index: 10;
+        .date {
+          max-width: 150px;
+          aspect-ratio: 1/1;
+          flex: 1;
+          background-color: $csPink;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          h1 {
+            color: white;
+            font-family: "Gill Sans";
+            font-weight: bold;
+            font-size: 55px;
+            margin: 0;
+          }
+          h2 {
+            color: white;
+            font-family: "Gill Sans";
+            font-weight: 100;
+            font-size: 31px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    h2 {
+      font-family: "Gill Sans";
+      font-size: 20px;
+      font-weight: 500px;
+      color: $csPink;
+      margin-top: 56px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: "Gill Sans";
+      font-size: 20px;
+      font-weight: 100px;
+      color: black;
+      margin-bottom: 33px;
+    }
+  }
+}
+
+.galleryShowcase {
+  width: 90%;
+  margin-top: 50px;
+  .galleryHero {
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 490 / 133;
+    background-image: url("../images/gallery/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .overlay {
+      background-color: $csGold;
+      opacity: 70%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .text {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: baseline;
+      justify-content: left;
+      color: $csGold;
+      text-shadow: rgba(0, 0, 0, 0.918) 0px 0 10px;
+      text-wrap: nowrap;
+      bottom: -40px;
+      margin-bottom: -28px;
+      h1 {
+        font-family: "Gill Sans";
+        font-size: 300px;
+        font-weight: 500;
+        margin: 0;
+      }
+      h2 {
+        font-family: "Gill Sans";
+        font-size: 140px;
+        font-weight: 400;
+        // margin: 0;
+        transform: translateY(4px);
+      }
+    }
+  }
+
+  .galleryContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+    font-family: "Gill Sans";
+    font-size: 16px;
+    font-weight: 100;
+    font-style: italic;
+
+    p:nth-child(1) {
+      flex: 52%;
+    }
+    p:nth-child(2) {
+      flex: 47%;
+    }
+  }
+}
+.galleryShowcase.type2 {
+  .galleryHero {
+    .overlay {
+      background-color: $csPink;
+    }
+    .text {
+      color: $csPink;
+    }
+  }
+}
+.galleryShowcase.type3 {
+  .galleryHero {
+    .overlay {
+      background-color: $csGreen;
+    }
+    .text {
+      color: $csGreen;
+    }
+  }
+}
+.galleryShowcase.type4 {
+  .galleryHero {
+    .overlay {
+      background-color: $csPurple;
+    }
+    .text {
+      color: $csPurple;
+    }
+  }
+}
+.galleryShowcase.type5 {
+  .galleryHero {
+    .overlay {
+      background-color: $csTurquoise;
+    }
+    .text {
+      color: $csTurquoise;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.contact {
+  margin-top: 85.5px;
+  margin-bottom: 60px;
+
+  h1 {
+    font-family: "Gill Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10.5px;
+  }
+
+  .contactForm {
+    @include wrapper;
+    gap: 50px;
+    display: flex;
+    align-items: center stretch;
+    justify-content: space-between;
+    gap: 50;
+
+    .locationMap {
+      flex: 43%;
+      background-color: red;
+      background-image: url("../images/map.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    form {
+      @include wrapper;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      flex-direction: column;
+      flex: 56%;
+      gap: 21px;
+
+      input,
+      textarea {
+        height: 60px;
+        font-family: "Gill Sans";
+        font-size: 16px;
+        font-weight: 500;
+        padding: 21px;
+        border: 0px;
+        background-color: #f5f5f5;
+        resize: none;
+      }
+
+      .btn {
+        height: 60px;
+        cursor: pointer;
+        width: 167px;
+        background-color: $csPink;
+        font-family: "Gill Sans";
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+
+        &:hover {
+          // text-shadow: rgba(0, 0, 0, 0.918) 0px 0 10px;
+          box-shadow: rgb(0, 0, 0) 0px 0 7px;
+        }
+      }
+    }
+  }
+}

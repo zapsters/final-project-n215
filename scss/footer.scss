@@ -1,0 +1,84 @@
+.footer {
+  padding: 35px 0;
+  background-color: $csPink;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans";
+  font-size: 16px;
+
+  h3 {
+    color: white;
+    opacity: 0.5;
+    font-family: "Gill Sans";
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .logo {
+    width: 92px;
+    aspect-ratio: 92/42;
+    background-image: url("../images/logo/logo-white.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contact {
+    margin: 45px auto;
+    text-align: center;
+
+    p {
+      margin-bottom: 1px;
+    }
+  }
+
+  .newsletter {
+    width: 100%;
+    margin-bottom: 30px;
+    input {
+      width: 80%;
+      background-color: #f56b88;
+      height: 60px;
+      max-width: 529px;
+      border-style: none;
+      padding-left: 23px;
+      color: white;
+
+      &::placeholder {
+        color: white;
+        opacity: 0.5; /* Firefox */
+      }
+    }
+    .btn {
+      background-color: white;
+      height: 60px;
+      color: $csPink;
+      max-width: 167px;
+      padding-left: 0px;
+      font-family: "Gill Sans";
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        box-shadow: rgb(0, 0, 0) 0px 0 7px;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 31px;
+    margin-bottom: 48px;
+
+    i {
+      font-size: 30px;
+    }
+  }
+}

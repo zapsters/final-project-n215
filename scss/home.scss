@@ -90,30 +90,83 @@
       color: #a8a8a8;
     }
   }
-
-  .upcomingEvents {
+  .eventsbg {
     background-color: $csPurple;
-    padding: 50px 40px 72px 40px;
-    h1 {
-      font-family: "Gill Sans", sans-serif;
-      font-size: 25px;
-      font-weight: normal;
-      font-style: normal;
-      margin-bottom: 10.5px;
-      color: white;
-      letter-spacing: 1.4px;
-    }
-    hr {
-      width: 392px;
-      border-width: 1px;
-      border-color: white;
-      border-style: solid;
-    }
+    .upcomingEvents {
+      padding: 50px 40px 72px 40px;
+      margin: 0 auto;
+      max-width: 1600px;
+      h1 {
+        font-family: "Gill Sans", sans-serif;
+        font-size: 25px;
+        font-weight: normal;
+        font-style: normal;
+        margin-bottom: 10.5px;
+        color: white;
+        letter-spacing: 1.4px;
+      }
+      hr {
+        width: 392px;
+        border-width: 1px;
+        border-color: white;
+        border-style: solid;
+      }
 
-    .events {
-      background-color: $csPink;
-      height: 124px;
-      margin-top: 33px;
+      .events {
+        margin-top: 33px;
+        display: flex;
+        gap: 20px;
+        .event {
+          align-items: flex-start;
+          display: flex;
+          flex: 1;
+
+          .date {
+            max-width: 60px;
+            aspect-ratio: 60/60;
+            flex: 1;
+            background-color: $csPink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+
+            h1 {
+              font-family: "Gill Sans";
+              font-weight: bold;
+              font-size: 22px;
+              margin: 0;
+            }
+            h2 {
+              font-family: "Gill Sans";
+              font-weight: 100;
+              font-size: 12px;
+              margin: 0;
+            }
+          }
+          .details {
+            max-width: 188px;
+            flex: 1;
+            padding-left: 20px;
+            h1 {
+              font-family: "Gill Sans";
+              font-weight: 400;
+              font-size: 15px;
+              margin: 0;
+              color: white;
+              margin-bottom: 20px;
+            }
+            h2 {
+              font-family: "Gill Sans";
+              font-weight: 400;
+              font-size: 13px;
+              margin: 0;
+              color: $csPink;
+            }
+          }
+        }
+      }
     }
   }
 }
