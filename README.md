@@ -1,10 +1,8 @@
 ## Link
-
 https://zapsters.github.io/final-project-n215/
 
 ## Purpose
-ww
-This final project will:
+This is my final project from n215:
 
 Be a single-page application
 Must be in an MVC format
@@ -13,11 +11,10 @@ Must include all the pages.
 Must use jQuery or pure JavaScript
 
 ## Task
-
 For this homework assignment, you will:
 
 You must create a project named final-project
-You must take this prototype Download prototypeand convert it into a single page. It is called Eventsy
+You must take this prototype Download prototype and convert it into a single page. It is called Eventsy
 It must look exactly like the prototype
 You can find the fonts and images under the Files > Final - Eventsy folder.
 You must use jQuery or JavaScript
